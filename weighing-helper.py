@@ -34,8 +34,7 @@ def main():
 if __name__ == "__main__":
     mass = float(sys.argv[1])
     f = open(sys.argv[2], "r")
-    lines = sorted(map(float,f.readlines()))
-    lines.reverse()
+    lines = list(map(float,f.readlines()))
     usedstack = []
     print(lines)
     f.close()
